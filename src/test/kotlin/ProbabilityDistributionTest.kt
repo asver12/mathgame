@@ -44,13 +44,11 @@ class ProbabilityDistributionTest {
         for( i in 0 .. 10){
             val randomFunction = probDistribution.drawRandomFunction(functions)
             assert(functions.contains(randomFunction))
-            print(" $randomFunction \n")
         }
         for( i in 0 .. 2){
             val randomFunction = probDistribution.drawRandomFunction(functions)
             assert(functions.contains(randomFunction))
             functions.remove(randomFunction)
-            print(" $randomFunction \n")
         }
     }
 }

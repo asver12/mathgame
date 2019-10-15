@@ -1,4 +1,5 @@
 fun main(args: Array<String>){
+
     val steps = 10
     val gameSettings = GameSettings(
         difficulty = Difficulty.Medium,

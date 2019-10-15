@@ -21,6 +21,9 @@ class Game(val gameSettings: GameSettings, var interimResult: Int = 0) {
         probabiltyDistribution = ProbabilityDistribution(functionHandler.allFunctions)
     }
 
+    /**
+     * @return interim Result
+     */
     fun getResult(): Int {
         return interimResult
     }
@@ -41,6 +44,10 @@ class Game(val gameSettings: GameSettings, var interimResult: Int = 0) {
     }
 
 
+    /**
+     * determines the next number and function to use and updates the probability function
+     * @return (number-, function-) to use
+     */
     fun getNextOperation(): Pair<Int, String> {
         val operationCall = getNextOperationIntern()
         callFunction(operationCall.second, operationCall.first)

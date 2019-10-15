@@ -1,0 +1,1 @@
+data class GameSettings(val difficulty: Difficulty, val steps: Int, val resultInterval: IntervalSettings, val calculationInterval: IntervalSettings)
